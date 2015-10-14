@@ -1,0 +1,58 @@
+﻿<div class="container panel panel-primary" style="background-color:gray">
+    <div class="panel-heading" style="font-size:large">
+        {{vm.title}}
+    </div>
+    <div class="panel-body">
+
+        <br />
+        <div class="container" style="color:white">
+            <div>
+                <h2 id="userTitle">Shopping Cart</h2>
+            </div>
+            <br />
+            <div id="userCP">
+                <br />
+                <table style="margin: 0 auto">
+                    <tr>
+                        <th>
+                            Items    
+                        </th>
+
+                       
+                    </tr>
+                    <tr ng-repeat="item in main.cart.cartItems">
+                        <!--Price detail here-->
+                    </tr>
+
+                </table>
+                <br />
+                <p id="userCPdiv">ProductId: {{}}</p>
+                <p id="userCPdiv">ProductPrice: {{}}</p>
+                <p id="userCPdiv">shipping: {{}}</p>
+                <p id="userCPdiv">qauntity: {{}}</p>
+                <p id="userCPdiv">Toatl: {{}}</p>
+
+                <br />
+                
+                <button type="button"
+                        class="btn btn-success"
+                        ng-click="">
+                    Chekout
+                </button>
+                <button type="button"
+                        class="btn btn-primary"
+                        ng-click="EditProducts(id)">
+                      EditCart
+                </button>
+                <div >
+                    <button type="button"
+                            class="btn btn-danger"
+                            ng-click="DeletProducts(id)">
+
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

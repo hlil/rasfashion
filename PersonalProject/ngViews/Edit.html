@@ -1,0 +1,41 @@
+﻿<div class="form-inline">
+    Edit
+</div>
+
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-7">
+            <form ng-submit="modal.EditProducts()">
+
+                <label>Name</label>
+                <input name="name" class="form-control" ng-model="modal.productToEdit.name" required />
+
+
+                <br />
+
+                <label>ProductId</label>
+                <input name="productId" class="form-control" ng-model="modal.productToEdit.productId" required />
+
+
+
+                <br />
+
+                <label>Material</label>
+                <input name="material" class="form-control" ng-model="modal.productToEdit.material" />
+
+                <br />
+
+                <label>Price</label>
+                <input name="price" class="form-control" ng-model="modal.productToEdit.price" required />
+
+                <br />
+
+                <label>PictureURL</label>
+                <input class="form-control" ng-model="modal.productToEdit.pictures" />
+                <br />
+                <input type="submit" value="Save" />
+            </form>
+        </div>
+        
+    </div>
+</div>

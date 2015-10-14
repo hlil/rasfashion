@@ -1,0 +1,41 @@
+﻿<div class="form-inline">
+    CREATE
+</div>
+
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-7">
+            <form ng-submit="modal.addProduct()">
+
+                <label>ProductName</label>
+                <input name="productName" class="form-control" ng-model="modal.productToCreate.productName" required />
+
+
+                <br />
+
+                <label>ProductId</label>
+                <input name="productId" class="form-control" ng-model="modal.productToCreate.productId" required />
+
+
+
+                <br />
+
+                <label>Material</label>
+                <input name="material" class="form-control" ng-model="modal.productToCreate.material" />
+
+                <br />
+
+                <label>Price</label>
+                <input name="price" class="form-control" ng-model="modal.productToCreate.price" />
+                <br />
+
+
+                <label>PictureURL</label>
+                <input ng-model="modal.productToCreate.pictures" class="form-control" />
+                <br />
+                <input type="submit" value="Save" />
+            </form>
+        </div>
+
+    </div>
+</div>

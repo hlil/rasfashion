@@ -1,0 +1,57 @@
+﻿<div class="form-inline">
+    <h2>Register.</h2>
+    <form name="userRegistration" ng-submit="account.userRegister()" novalidate>
+
+        <div>
+            <label>UserName:</label><br />
+            <input class="form-control" name="UserName" ng-model="account.newUser.displayName" type="text" required />
+        </div>
+       
+        <span ng-show="userRegistration.UserName.$dirty&&userRegistration.UserName.$error.required" class="error">*required</span>
+        <br />
+        <div>
+            <label>FirstName:</label><br />
+            <input class="form-control" name="firstName" ng-model="account.newUser.firstName" type="text" required />
+        </div>
+
+        <span ng-show="userRegistration.firstName.$dirty&&userRegistration.firstName.$error.required" class="error">*required</span>
+        <br />
+        <div>
+            <label>LastName:</label><br />
+            <input class="form-control" name="lastName" ng-model="account.newUser.lastName" type="text" required />
+        </div>
+        <span ng-show="userRegistration.lastName.$dirty&&userRegistration.lastName.$error.required" class="error">*required</span>
+        <br />
+
+        <div>
+            <label>Email:</label><br />
+            <input class="form-control" name="email" ng-model="account.newUser.email" type="text" required />
+        </div>
+        <span ng-show="userRegistration.email.$dirty&&userRegistration.email.$error.required" class="error">*required</span>
+        <br />
+
+        <div>
+            <label>Password:</label><br />
+            <input class="form-control" name="password" ng-model="account.newUser.password" type="password" required />
+        </div>
+        <span ng-show="userRegistration.password.$dirty&&userRegistration.password.$error.required" class="error">*required</span>
+        <br />
+
+        <div>
+            <label>Confirm Password:</label><br />
+            <input class="form-control" name="confirmPassword" ng-model="account.newUser.confirmPassword" type="password" required />
+        </div>
+        <span ng-show="userRegistration.confirmPassword.$dirty&&userRegistration.confirmPassword.$error.required" class="error">*required</span>
+        <br />
+
+        <div>
+            <a class="btn btn-default"
+               href="/"
+               style="width:90px ; height:30px">
+                Register
+            </a>
+            <!--<input style="margin-top:5px" type="submit" value="Register" ng-disabled="userRegistration.$invalid" />-->
+        </div>
+    </form>
+
+</div>

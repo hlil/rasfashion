@@ -1,0 +1,41 @@
+﻿
+<!DOCTYPE html>
+<html ng-app="productManagement">
+<head lang="en">
+    <base href="/" />
+    <meta charset="UTF-8">
+
+
+
+    <title>RasFashion Products</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/BootsStrapCopy.css" rel="stylesheet" />
+
+</head>
+<body style="background-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE9HT4wzmLAABTqug1LOQacstV0zUWJmS0Ys_MG1NpAWU4j6ot)">
+
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">PRODUCTS</div>
+            </div>
+        </div>
+    </nav>
+    <ng-view></ng-view>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+
+    <script src="~/proApp/products/app.js"></script>
+    <script src="~/proApp/products/Services.js"></script>
+    <script src="~/proApp/products/CarouselController.js"></script>
+    <script src="~/proApp/products/Controller.js"></script>
+    <script src="~/proApp/products/editController.js"></script>
+
+
+</body>
+</html>
